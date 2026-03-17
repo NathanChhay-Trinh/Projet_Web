@@ -2,13 +2,30 @@
     position: relative;
     left: 0%;
     top: 0%;
-    height :10%;
-    width:10%;
-    
+    height: 15%;
+    width: 15%;
 }
 
-a {
+.Menu{
+    width: 15%;
+    height: max-content;
+    background-color: #E7E7E7;
+}
+.carre_vide {
+    height: 100%;
+    width: 15%;
+    background-color: #E7E7E7;
+}
+
+#background_menu{
+    height: 100%;
+    width: 100%;
+}
+
+button {
     text-decoration-line: none;
     color: #537BB8;
     font-family: "Roboto", sans-serif;
+    font-size: 1.2vw;
+    margin: 0.6vw;
 }
