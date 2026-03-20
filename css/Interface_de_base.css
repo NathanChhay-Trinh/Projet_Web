@@ -6,11 +6,18 @@
     width: 15%;
 }
 
-.Menu{
-    width: 15%;
+.img-menu{
+    width: 80%;
     height: max-content;
     background-color: #E7E7E7;
+    padding: 20px 0 ;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(91, 91, 91, 0.865);
+    margin: 0 auto;
 }
+
 .carre_vide {
     height: 100%;
     width: 15%;
@@ -22,10 +29,55 @@
     width: 100%;
 }
 
-button {
+.dot button {
+    padding: 10px;
     text-decoration-line: none;
     color: #537BB8;
-    font-family: "Roboto", sans-serif;
+    font-family: "OpenSans", sans-serif;
     font-size: 1.2vw;
     margin: 0.6vw;
+    border-radius: 10%;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    border-color: #E7E7E7;
+    width: 10vw;
+    text-align: center;
+    border-color: white;
+    
 }
+.dot button:hover {
+    background-color: white;
+}
+    
+.side-nav {
+    display: fixed;
+    height: 100 vh;
+    left : 0%;
+    top : 0%;
+    transform: transform 1s ease;
+}
+
+.menu-toggle{
+position: relative;
+left: 12%;
+bottom: 50%;
+
+}
+
+
+.wrapper {
+    background: #E7E7E7;
+    height: 100vh;
+    width: 15%;
+}
+
+
+.dots-container{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+height : 60% ;
+}
+
