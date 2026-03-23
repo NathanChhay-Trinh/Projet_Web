@@ -15,14 +15,14 @@
     <label for="toggle" class="menu-toggle">☰</label>
 
     <header>
-        <img src="../Logo_Efrei.png" class="Logo_de_lEfrei"><!-- l'image l'école dois etre en haut a gauche -->
+        <img src="../img/Logo_Efrei.png" class="Logo_de_lEfrei"><!-- l'image l'école dois etre en haut a gauche -->
 
 
         <nav class="side-nav"> <!-- il s'agit de la barre de navigation présent a gauche -->
             <div class="wrapper">
                 <div class="dots-container">
                     <div class="img-menu">
-                        <img src="../Acceuil.png" id="background_menu">
+                        <img src="../img/Acceuil.png" id="background_menu">
                     </div>
                     <div class="dot d1"><button href="./Acceuil.html">Accueil</button><br></div>
                     <div class="dot d2"><button href="./A_propos.html">À propos</button><br></div>
