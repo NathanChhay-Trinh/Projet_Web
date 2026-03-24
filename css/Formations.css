@@ -1,17 +1,46 @@
+div {
+    font-family:  "Roboto", sans-serif;
+    color:#243564; 
+}
+
+h1 {
+    font-size:500%;
+    margin: 25px;
+    padding: 25px;
+    text-align: center;
+}
+
+.presentation_formation {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
 #formation_container {
+    margin: 25px;
+    padding: 25px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    
 }
 
 #formation_container .formation {
     width: 25%; /* 4 éléments par ligne */
     text-align: center;
+    border-radius: 12px;
+
 }
 
 #formation_container .formation img {
     width: 100%;
     height: auto;
     object-fit: cover;
+    border-radius: 12px;
+}
+#formation_container .formation:hover {
+    transform: scale(1.03);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
