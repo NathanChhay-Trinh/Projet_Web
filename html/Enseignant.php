@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/Interface_de_base.css">
-    <title>Enseignant</title>
+    <title>Accueil</title>
 
 </head>
 
@@ -15,6 +15,5 @@
     <?php include("Footer.php"); ?>
 
 </body>
-
 
 </html>
