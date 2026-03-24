@@ -1,0 +1,17 @@
+#formation_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+#formation_container .formation {
+    width: 25%; /* 4 éléments par ligne */
+    text-align: center;
+}
+
+#formation_container .formation img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
