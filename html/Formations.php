@@ -1,5 +1,17 @@
-<?php ?>
-<header>
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/Interface_de_base.css">
+    <title>Accueil</title>
+
+</head>
+
+<body>
+
+    <header>
 
         <input type="checkbox" id="toggle">
          <label for="toggle" class="menu-toggle">☰</label>
@@ -17,11 +29,22 @@
                     <div class="dot d2"><a href="./A_propos.php" class="menu-btn">À propos</a></div>
                     <div class="dot d3"><a href="./Actualite.php" class="menu-btn">Actualité</a></div>
                     <div class="dot d4"><a href="./Enseignant.php" class="menu-btn">Enseignant</a></div>
-                    <div class="dot d5"><a href="./Formations.php" class="menu-btn">Formations</a></div>
+                    <div class="dot d5"><a href="./Formation.php" class="menu-btn">Formations</a></div>
                     <div class="dot d6"><a href="./Information.php" class="menu-btn">Information</a></div>
                     <div class="dot d7"><a href="./VieEtudiante.php" class="menu-btn">Vie étudiante</a></div>
                 </div>
             </div>
         </nav>
     </header>
-    <?php ?>
+
+    <section class ="efrei-section">
+        <div class="efrei"> <!-- qui a fait ca ? ( c'est normal que c'était cassée ? ") -->
+    <footer>
+
+
+    </footer>
+
+</body>
+
+
+</html>
