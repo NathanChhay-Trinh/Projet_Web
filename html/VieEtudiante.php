@@ -32,7 +32,9 @@
 
         <h2 class="redirection-campus">➾ - 1 Infomation du Paris </h2>
 
-        <img src="../img/Paris_Campus_img1.png" id="Paris_Campus_img1">
+        <div><a href="./Campus/Paris.php/">
+        <img src="../img/Paris_Campus_img1.png" id="Paris_Campus_img1" >
+        </a></div>
 
         <?php include("Footer.php"); ?>
 
