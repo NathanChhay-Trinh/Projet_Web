@@ -3,11 +3,15 @@ div {
     color:#243564; 
 }
 
+#Nos_formations {
+    text-align: center;
+}
+
 h1 {
     font-size:500%;
     margin: 25px;
     padding: 25px;
-    text-align: center;
+    
 }
 
 .presentation_formation {
@@ -32,7 +36,6 @@ h1 {
     border-radius: 12px;
 
 }
-
 #formation_container .formation img {
     width: 100%;
     height: auto;
@@ -44,3 +47,14 @@ h1 {
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+/*=======Grande ecole=======*/
+
+#pret_prepa div{
+    position: relative;
+    top: 0%;
+    right: 0%;
+    width: 15%;
+}
+
+

@@ -13,7 +13,7 @@
 <body>
 
     <?php include("menu.php"); ?>
-    <div><h1>Formations</h1></div>
+    <div id="Nos_formations"><h1>Nos formations</h1></div>
     <div class="presentation_formation"><strong>Découvrez</strong> nos formations pour construire un <strong>parcours</strong> qui vous ressemble!
     <br>L'Efrei propose une multitude de formations <strong>variées</strong> et <strong>adaptées</strong> aux enjeux technologiques actuels, permettant à chaque étudiant de construire un parcours en phase avec ses <strong>ambitions</strong>.
     <br><br>
@@ -25,12 +25,14 @@
     
     <div id="formation_container">
         <div class="formation">
+            <a href="./Formation/Grande_ecole.php">
             <img src="../img/Grande_ecole.jpg" class="Grande_ecole" alt="Logo Grande Ecole">
-            Prog. Grande École
+            Prog. Grande École</a>
         </div>
         <div class="formation">
+            <a href="./Formation/Technologie&Numerique.php">
             <img src="../img/Technologie&Numerique.jpg" class="Technologie&Numerique" alt="Logo Technologie & Numerique">
-            Prog. Technologie & Numérique
+            Prog. Technologie & Numérique</a>
         </div>
         </div>
 
