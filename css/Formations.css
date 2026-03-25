@@ -11,7 +11,6 @@ h1 {
     font-size:500%;
     margin: 25px;
     padding: 25px;
-    
 }
 
 .presentation_formation {
@@ -47,6 +46,15 @@ h1 {
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+#formation_container a *,
+#formation_container a,
+#formation_container a:link,
+#formation_container a:visited {
+    text-decoration: none !important;
+    color: inherit;
+}
+
 
 /*=======Grande ecole=======*/
 
