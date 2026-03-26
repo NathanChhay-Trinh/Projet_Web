@@ -58,11 +58,42 @@ h1 {
 
 /*=======Grande ecole=======*/
 
-#pret_prepa div{
-    position: relative;
-    top: 0%;
-    right: 0%;
-    width: 15%;
+
+#pret_prepa {
+    width: 60%;
+    margin: 15px;
+    padding: 15px;
 }
 
+#bloc_1 {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
 
+.img_ge_1 {
+    margin: 15px;
+    padding: 15px;
+    width: 40%;
+    object-fit: cover;
+    border: thick double #520404;
+
+}
+#bloc_2 {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+.img_ge_2 {
+    margin: 15px;
+    padding: 15px;
+    width: 40%;
+    object-fit: cover;
+    border: thick double #520404;
+
+}
+.desc_prepa {
+    
+    margin: 15px;
+    padding: 15px;
+}

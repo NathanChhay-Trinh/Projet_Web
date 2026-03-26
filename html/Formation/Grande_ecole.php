@@ -15,8 +15,33 @@
     
 
     <?php include("menu_2nd.php"); ?>
+    <section id="bloc_1">
+    <div id="pret_prepa"><h1>Alors...Prêt <br> pour la prépa?!</h1></div>
+    <img src="../../img/Grande_ecole.jpg" class="img_ge_1"  alt=""></section>
 
-    <div id="pret_prepa"><h1>Prêt <br> pour la prépa?!</h1></div>
+    <section id="bloc_2">
+    <img src="../../img/prepa.jpg" class="img_ge_2"  alt="">
+    <div id="desc_prepa">Découvrez les <strong>5 prépas ingénieur intégrées de l’Efrei</strong>. 
+        Des formations généralistes alliant <strong>connaissances scientifiques et 
+        les compétences techniques nécessaires à l’intégration du cycle ingénieur</strong> :
+        <ul>
+            <li>
+                1re année de Prépa Scientifique
+            </li>
+            <li>
+                1re année de Prépa Scientifique en anglais
+            </li>
+            <li>
+                1re année de Prépa Scientifique en rentrée décalée (février 2026)
+            </li>
+            <li>
+                1re année de Prépa Bio & Numérique
+            </li>
+            <li>
+                1re année de Prépa PLUS
+            </li>
+    </div>
+</section>
 
     <?php include("Footer_2nd.php"); ?>
 
