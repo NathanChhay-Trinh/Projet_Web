@@ -1,0 +1,10 @@
+.text-mention-légales{
+    font-family:  "Roboto", sans-serif;
+    color:#243564; 
+    margin: 60px 10%;
+    padding: 40px;
+}
+
+.text-mention-légales h2{
+font-size:  36px;
+}
