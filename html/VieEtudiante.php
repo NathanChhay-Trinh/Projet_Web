@@ -69,19 +69,19 @@
         </div>
 
         <div class="redirection-campus">
-            <a href=".\Campus\Paris.php">
+            <a href="./Paris.php">
                 ➾ - 1 Information du Campus Paris
             </a>
         </div>
 
         <div class="redirection-campus">
-            <a href="./Campus/Bordeaux.php">
+            <a href="./Bordeaux.php">
                 ➾ - 2 Information du Campus Bordeaux
             </a>
         </div>
 
         <div>
-            <a href="./Campus/Paris.php/">
+            <a href="./Paris.php/">
                 <img src="../img/Paris_Campus_img1.png" id="Paris_Campus_img1">
             </a>
         </div>
