@@ -1,5 +1,6 @@
 #text-intro {
-    padding: 10px 10%;
+    margin: 60px 10%;
+    padding: 10px;
     font-family:  "Roboto", sans-serif;
     color:#243564; 
 }
@@ -46,12 +47,9 @@
 
 .Les_campus {
     margin: 60px 10%;
-    padding: 40px;
-    background: linear-gradient(135deg, #ffffff, #4d7ef1);
-    border-radius: 20px;
+    padding: 10px;
     color: white;
     font-family:  "Roboto", sans-serif;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 .Les_campus p {
@@ -141,12 +139,9 @@
 
 .section-crous {
     margin: 60px 10%;
-    padding: 40px;
-    background: linear-gradient(135deg, #ffffff, #4d7ef1);
-    border-radius: 20px;
+    padding: 10px;
     color: white;
     font-family:  "Roboto", sans-serif;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 .section-crous h2 {
@@ -184,8 +179,72 @@
 }
 
 
+/*======================== associations =========================*/
+
+.associations-section {
+    padding: 60px 10%;
+}
+
+.associations-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.asso-card {
+    background: linear-gradient(125deg , #ffffff , #142f79);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.asso-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+}
+
+.pagination {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background: #eb58b6;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.pagination button:hover {
+    background: #32a1ce;
+}
+
+.associations-section h2{
+    padding-bottom: 20px;
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #eb58b6;
+}
+
+.img_asso{
+    width: 100%;    
+    max-width: 200px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: inherit;
+}
 
 
+
+@media screen and (max-width: 768px) {
+    .associations-container {
+        grid-template-columns: 1fr;
+    }
+}
 
 @media screen and (max-width: 768px) 
 {
