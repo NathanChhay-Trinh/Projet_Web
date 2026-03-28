@@ -17,10 +17,10 @@
     <?php include("menu_2nd.php"); ?>
     <section id="bloc_1">
     <div id="pret_prepa"><h1>Alors...Prêt <br> pour la prépa?!</h1></div>
-    <img src="../../img/Grande_ecole.jpg" class="img_ge_1"  alt=""></section>
+    <img src="../../img/Grande_ecole.jpg" class="img_form"  alt=""></section>
 
     <section id="bloc_2">
-    <img src="../../img/prepa.jpg" class="img_ge_2"  alt="">
+    <img src="../../img/prepa.jpg" class="img_form"  alt="">
     <div id="desc_prepa">Découvrez les <strong>5 prépas ingénieur intégrées de l’Efrei</strong>. 
         Des formations généralistes alliant <strong>connaissances scientifiques et 
         les compétences techniques nécessaires à l’intégration du cycle ingénieur</strong> :

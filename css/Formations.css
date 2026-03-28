@@ -71,7 +71,7 @@ h1 {
     justify-content: space-between; 
 }
 
-.img_ge_1 {
+.img_form {
     margin: 15px;
     padding: 15px;
     width: 40%;
@@ -84,14 +84,7 @@ h1 {
     align-items: center; 
     justify-content: space-between; 
 }
-.img_ge_2 {
-    margin: 15px;
-    padding: 15px;
-    width: 40%;
-    object-fit: cover;
-    border: thick double #520404;
 
-}
 .desc_prepa {
     
     margin: 15px;
