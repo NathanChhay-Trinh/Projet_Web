@@ -1,3 +1,48 @@
+#text-intro {
+    padding: 10px 10%;
+    font-family:  "Roboto", sans-serif;
+    color:#243564; 
+}
+
+.h2_titre_vie_etudiant{
+    font-size: 50px;
+}
+
+.intro-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.intro-text p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.intro-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.intro-image img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease;
+}
+
+.intro-image img:hover {
+    transform: scale(1.05);
+}
+
+/*=====================Les Campus=================*/
 
 .Les_campus {
     margin: 60px 10%;
@@ -5,6 +50,7 @@
     background: linear-gradient(135deg, #ffffff, #4d7ef1);
     border-radius: 20px;
     color: white;
+    font-family:  "Roboto", sans-serif;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
@@ -99,11 +145,12 @@
     background: linear-gradient(135deg, #ffffff, #4d7ef1);
     border-radius: 20px;
     color: white;
+    font-family:  "Roboto", sans-serif;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 .section-crous h2 {
-    font-size: 28px;
+    font-size: 36px;
     margin-bottom: 15px;
     color: #eb58b6;
 }
@@ -117,7 +164,7 @@
 .section-crous p {
     font-size: 16px;
     line-height: 1.7;
-    color: #000000;
+    color:#243564; 
 }
 
 
@@ -134,4 +181,41 @@
 #img_crouss:hover {
     transform: scale(1.03);
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+
+@media screen and (max-width: 768px) 
+{
+    .intro-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-text p {
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 768px) 
+{
+
+    .Les_campus {
+        padding: 50px 20px;
+    }
+
+    .h2_titre_campus {
+        font-size: 26px;
+    }
+
+    #text_campus {
+        font-size: 15px;
+    }
+
+    #Paris_Campus_img1 {
+        border-radius: 12px;
+    }
 }

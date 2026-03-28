@@ -20,7 +20,32 @@
         <span>Vie étudiante</span>
     </div>
 
-    <div class="Les_campus">
+<section id="text-intro">
+
+      <h2 class = "h2_titre_vie_etudiant">Une vie etudiant pour tous </h2>
+
+    <div class="intro-container">
+
+        <div class="intro-text">
+            <p>
+                À l’Efrei, la vie étudiante rime avec <b>engagement</b>, <b>créativité</b> et <b>réussite</b>. 
+                Au sein de campus dynamiques, les étudiants profitent d’une <b>pédagogie innovante</b>, 
+                d’une <b>vie associative riche</b> et d’un <b>accompagnement complet</b> : 
+                logement, aides financières, infrastructures modernes et événements étudiants.
+            </p>
+        </div>
+
+        <div class="intro-image">
+            <img src="../img/intro-vie-etudiant.png" alt="Vie étudiante">
+        </div>
+
+    </div>
+
+</section>
+
+
+
+    <section class="Les_campus">
         <p>Nos Campus</p>
         <h2 class="h2_titre_campus"> Paris & Bordeaux , deux campus au cœur de la création numérique </h2>
         <div id="text_campus">
@@ -57,9 +82,9 @@
                 <img src="../img/Paris_Campus_img1.png" id="Paris_Campus_img1">
             </a>
         </div>
-    </div>
+    </section>
 
-    <div class="section-crous">
+    <section class="section-crous">
 
         <h2>Restauration</h2>
 
@@ -72,7 +97,9 @@
 
         <img src="../img/crouss.png" id="img_crouss">
 
-    </div>
+    </section>
+
+
 
 
     <?php include("Footer.php"); ?>
