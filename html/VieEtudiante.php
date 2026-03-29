@@ -98,7 +98,7 @@
             situer au -1 du batiment " la maison " , il est ouvert du lundi au vendredi et 11h45 à 14h30.
         </p>
 
-        <img src="../img/crouss.png" id="img_crouss">
+        <img src="../img/cours-efrei.png" id="img_crouss">
 
     </section>
 
