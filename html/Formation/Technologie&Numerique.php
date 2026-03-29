@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../../css/Interface_de_base.css">
     <link rel="stylesheet" href="../../css/Formations.css">
-    <title>Programme Grande école</title>
+    <title>Programme Technologie & Numérique</title>
 
 </head>
 

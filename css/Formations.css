@@ -56,7 +56,7 @@ h1 {
 }
 
 
-/*=======Grande ecole=======*/
+/*=======Grande ecole/T&N=======*/
 
 
 #pret_prepa {
@@ -90,3 +90,83 @@ h1 {
     margin: 15px;
     padding: 15px;
 }
+
+/*=======Enseignant=======*/
+
+.desc_enseignant {
+    margin: 25px;
+    width: 70%;
+}
+
+.prof-container {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    
+    background-color: white;
+    width: 25vw;
+    height: 45vw;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.prof-card img {
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 1px solid #000000; 
+  
+}
+
+.nav-btn {
+    height: 5vw;
+    border: 1px solid #000000; 
+    border-radius: 15px;
+    align-items: center;
+    position: relative;
+    top: 45%;
+    z-index: 10;
+    
+}
+.prev-btn {
+    right: 200px; /* ajuste selon ton design */
+}
+
+.next-btn {
+    left: 200px;
+}
+
+.nav-btn:hover {
+    color: rgb(96, 96, 96);
+    
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 25vw;
+    height: auto;
+    padding: 0 12px;
+    filter: drop-shadow(0 2px 2px #555);
+    will-change: transform, opacity;
+    margin-top: 20px;
+    
+}
+
+.prof-card {
+    margin-top: 20px;
+    width: 25vw;
+    height: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 16px 20px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+.prof-card.active {
+    opacity: 1;
+}
+

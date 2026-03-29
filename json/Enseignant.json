@@ -1,0 +1,39 @@
+[
+    {
+        "titre": "Soumaila Abdoulaye DIARRA",
+        "image": "../img/Soumaila.jpg",
+        "description": "DevSecOps Expert🛡️@BPCE | Software engineering, Security, Flutter enthusiast"
+    },
+    {
+        "titre": "Lena Trebaul",
+        "image": "../img/Lena.jpg",
+        "description": "Ingénieure en informatique, docteure en neurosciences computationnelles et enseignante en informatique."
+    },
+    {
+        "titre": "Mourad Kmimech",
+        "image": "../img/Mourad.jpg",
+        "description": "Enseignant chez EFREI- Grande écolé du numérique"
+    },
+    {
+        "titre": "Léa Delacroix",
+        "image": "../img/Léa.jpg",
+        "description": "Responsable pédagogique"
+    },
+    {
+        "titre": "A Yvan Guifo Fodjo",
+        "image": "../img/Yvan.jpg",
+        "description": "PhD in Computer Science (Software Engineering, Modelling and Simulation of Complex Systems, Sustainable Digital Technology)"
+    },
+    {
+        "titre": "Fatima Moqran",
+        "image": "../img/Fatima.jpg",
+        "description": "Formatrice Data & Intelligence Artificielle | Je forme la nouvelle génération aux métiers de la Data  | Intervenante dans +5 établissements d’enseignement supérieur  | Certificat de formateur pour adultes"
+    },
+    {
+        "titre": "Frédéric Meunier",
+        "image": "../img/Frédéric.jpg",
+        "description": "Directeur général @EFREI | Enseignement supérieur et Recherche"
+    }
+]
+
+
