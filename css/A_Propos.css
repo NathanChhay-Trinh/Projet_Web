@@ -1,0 +1,53 @@
+.contenu-principal {
+    font-family: "Roboto", sans-serif;
+    color: #243564;
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.section-propos {
+    margin: 40px auto;
+    max-width: 900px;
+    line-height: 1.6;
+}
+
+.section-propos h1 {
+    font-size: 350%;
+    margin-bottom: 30px;
+    color: #243564;
+}
+
+.section-propos h2 {
+    font-size: 200%;
+    margin-bottom: 20px;
+    color: #034296;
+}
+
+.section-propos p {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+.section-propos ul {
+    list-style-position: inside;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+}
+
+.section-propos li {
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.separation {
+    width: 60%;
+    border: none;
+    border-top: 2px solid #E7E7E7;
+    margin: 50px auto;
+}
+
+.section-propos:hover {
+    transform: scale(1.01);
+    transition: transform 0.3s ease;
+}
