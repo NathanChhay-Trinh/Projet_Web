@@ -1,0 +1,106 @@
+let currentMonday = null;
+
+function update_date() {
+    const date = new Date();
+    const day = date.getDay(); // 0 = dimanche
+// Convertir dimanche (0) en 7 pour simplifier
+    const adjustedDay = day === 0 ? 7 : day;
+    currentMonday = new Date(date);
+    currentMonday.setDate(date.getDate() - (adjustedDay - 1));
+    update_week();
+}
+
+function update_week() {
+    const month = currentMonday.getMonth();
+
+    const year = currentMonday.getFullYear();
+
+    const monday = new Date(currentMonday) ;
+
+
+    const friday = new Date(currentMonday);
+    friday.setDate(monday.getDate() + 4);
+    const list_month = ["jan", "fev", "mar", "avr", "mai", "jun", "jul", "aou", "sep", "oct", "nov", "dec"];
+    const real_month = list_month[month];
+    const firstDay = monday.getDate();
+    const lastDay = friday.getDate();
+
+
+
+update_calendar(real_month, firstDay, lastDay, year);
+}
+
+
+function update_calendar(real_month, firstDay, lastDay, year) {
+    const calendar_header = document.querySelector(".calendar-header");
+
+    // Effacer l'ancien calendrier
+    calendar_header.innerHTML = "";
+
+    const calendar = document.createElement('div');
+    calendar.classList.add('calendar');
+
+    const table = document.createElement('table');
+    const thead = document.createElement('thead');
+    const tbody = document.createElement('tbody');
+    const jours = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
+    const heures = ["7h-8h","8h-9h","9h-10h","10h-11h","11h-12h","12h-13h","13h-14h","14h-15h","15h-16h","17h-18h","19h-20h"];
+    /*Case vide*/
+    const trHead = document.createElement('tr');
+    const th = document.createElement('th');
+    const caption = document.createElement('caption');
+
+    caption.textContent = `${real_month} ${firstDay}-${lastDay} ${year}`;
+
+    table.appendChild(caption);
+    trHead.appendChild(th);
+
+    jours.forEach(jour => {
+    let th = document.createElement('th');
+    th.setAttribute("scope", "col");
+    th.textContent = jour;
+    trHead.appendChild(th);
+});
+
+
+
+heures.forEach(heure => {
+    let trBody = document.createElement('tr');
+    let th = document.createElement('th');
+    th.setAttribute("scope", "row");
+    th.textContent = heure;
+    trBody.appendChild(th);
+    for(let i = 0; i < 7; i++) {
+        let td = document.createElement('td');
+        trBody.appendChild(td);
+    }
+    tbody.appendChild(trBody);
+});
+
+thead.appendChild(trHead);
+
+table.appendChild(thead);
+table.appendChild(tbody);
+calendar.appendChild(table);
+
+
+calendar.classList.add('calendar');
+calendar_header.appendChild(calendar);
+}
+
+const next_week = document.querySelector('#next-week');
+const prev_week = document.querySelector('#prev-week');
+
+next_week.addEventListener('click', () => {
+    currentMonday.setDate(currentMonday.getDate() + 7);
+
+    update_week();
+});
+
+prev_week.addEventListener('click', () => {
+    currentMonday.setDate(currentMonday.getDate() - 7);
+
+    update_week();
+});
+
+update_date();

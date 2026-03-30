@@ -21,7 +21,7 @@
         formateur en data, architecte des ordinateurs... Tous font partie de <strong>l'élite de leur génération!</strong></p></div>
     <script src="../js/Enseignant.js" defer></script>
     <div class="prof-container" id="prof-container">
-    <button class="nav-btn prev-btn">&#9664;</button>
+    <button class="nav-btn prev-btn">◀</button>
     
 
   
@@ -29,7 +29,7 @@
     
   
 
-    <button class="nav-btn next-btn">&#9654;</button>
+    <button class="nav-btn next-btn">▶</button>
 </div>
     
     <?php include("Footer.php"); ?>
