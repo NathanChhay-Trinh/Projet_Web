@@ -6,19 +6,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/Agenda.css">
     <link rel="stylesheet" href="../css/Interface_de_base.css">
-    <style>
-    caption{
-    color : red;
-    font-size: large;
-    }
-    thead, tfoot {
-    background-color: #333;
-    color: #fff;
-    }
-        table, td, caption {
-    border: 1px solid #333;
-    }
-    </style>
+
     <title>Agenda</title>
 
 </head>
