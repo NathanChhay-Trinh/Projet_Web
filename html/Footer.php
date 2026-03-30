@@ -14,9 +14,8 @@
             <h4>Navigation</h4>
             <ul>
                 <li><a href="./Acceuil.php">Accueil</a></li>
-                <li><a href="./formation.php">Formations</a></li>
+                <li><a href="./formations.php">Formations</a></li>
                 <li><a href="./vieEtudiante.php">Vie étudiante</a></li>
-                <li><a href="">Campus</a></li>
             </ul>
         </div>
 
