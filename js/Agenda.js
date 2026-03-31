@@ -119,4 +119,37 @@ prev_week.addEventListener('click', () => {
 update_date();
 
 function ouvrirPopup(td) {
-}//le pop up 
+    // Supprimer ancienne popup si elle existe
+    const ancienne = document.querySelector('.popup-overlay');
+    if (ancienne) ancienne.remove();
+
+    const isPris = td.dataset.pris === "true";
+    const heure = td.dataset.heure;
+    const jour = td.dataset.jour;
+
+    const overlay = document.createElement('div');
+    overlay.classList.add('popup-overlay');
+
+    overlay.innerHTML = `
+        <div class="popup">
+            <button class="popup-close">✕</button>
+            <h3>Créneau : ${jour} ${heure}</h3>
+            <p class="${isPris ? 'pris' : 'libre'}">
+                ${isPris ? 'Ce créneau est déjà pris.' : 'Ce créneau est disponible.'}
+            </p>
+            ${!isPris ? `
+                <button class="btn-reserver" onclick="reserver('${jour}','${heure}')">
+                    Réserver ce créneau
+                </button>
+            ` : ''}
+        </div>
+    `;
+
+    overlay.querySelector('.popup-close').addEventListener('click', () => overlay.remove());
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) overlay.remove();
+    });
+
+    document.body.appendChild(overlay);
+}
+
