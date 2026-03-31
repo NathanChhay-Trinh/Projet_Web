@@ -157,11 +157,53 @@
                 </div>
 
                 <div class="asso-card">
-                    <h3>Bureau Des Arts</h3>
-                    <h4>Paris Artistiques</h4>
-                    <p>Le BDA est l’association de promotion des différents domaines artistiques.
-                        Elle travail avec les autre association pour proposer des beau événements</p>
+                    <h3>Cap Efrei</h3>
+                    <h4>Paris Sportives</h4>
+                    <p>L’association de voile de l’Efrei, ouverte aux débutants comme aux passionnés, organise des week-ends en Bretagne et participe à de nombreuses régates.</p>
                     <img src="../img/asso/asso_bureau_des_art.png" class="img_asso">
+                </div>
+
+                <div class="asso-card">
+                    <h3>Club Rézo</h3>
+                    <h4>Paris Technologie</h4>
+                    <p>Club Rézo organise des rézals, une nuit de jeux sur le campus. En lien avec le service informatique de l’école, elle porte des projets réseau et techniques grâce à ses serveurs.</p>
+                    <img src="../img/asso/asso_rézo.jpg" class="img_asso">
+                </div>
+
+                <div class="asso-card">
+                    <h3>Pandora</h3>
+                    <h4>Paris Culture & Loisirs</h4>
+                    <p>Ce club promeut la culture du jeu vidéo, en particulier des jeux rétro. Chaque année, elle organise des rencontres conviviales pour se retrouver autour de cette passion.</p>
+                    <img src="../img/asso/asso_pandora.jpg" class="img_asso">
+                </div>
+
+                <div class="asso-card">
+                    <h3>Efrei Picture Studio</h3>
+                    <h4>Paris Évènementielles</h4>
+                    <p>C’est l’association photographie de l’école. Ses membres organisent des formations, des expositions, des concours et immortalise tous les événements de l’école.</p>
+                    <img src="../img/asso/asso_picture.jpg" class="img_asso">
+                </div>
+
+                <div class="asso-card">
+                    <h3>Efrei Tir</h3>
+                    <h4>Paris Culture & Loisirs</h4>
+                    <p>Efrei Tir rassemble les amateurs de tir à l’arc, laser game ou airsoft. À travers les entrainements, les étudiants peuvent développer leur précision, analyse et capacité d’adaptation.</p>
+                    <img src="../img/asso/asso_tir.jpg" class="img_asso">
+                </div>
+
+                <div class="asso-card">
+                    <h3>Taverne du Troll</h3>
+                    <h4>Paris Culture & Loisirs</h4>
+                    <p>C’est le rendez-vous pour tous les amateurs de jeux de rôle, de figurines, de cartes et de jeux de société.</p>
+                    <img src="../img/asso/asso_taverne.jpg" class="img_asso">
+                </div>
+
+                
+                <div class="asso-card">
+                    <h3>WEI</h3>
+                    <h4>Paris Évènementielles</h4>
+                    <p>Durant tout septembre, l’équipe accueille les nouveaux étudiants et anime le campus pour faciliter leur intégration dans l’école. Le WEI organise aussi le week-end d’intégration, point fort de la rentrée.</p>
+                    <img src="../img/asso/asso_wei.jpg" class="img_asso">
                 </div>
 
             </div>
