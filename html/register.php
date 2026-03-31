@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Connexion</title>
+    <link rel="stylesheet" href="../css/Interface_de_base.css">
+    <title>Création de compte</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -30,36 +31,19 @@
                 <input type="password" id="password" name="password" required>
             </div>
 
+            <div class="register-group">
+                <label for="status">Statut :</label>
+                <select name="status" id="status">
+                    <option value="">--Veuillez choisir une option--</option>
+                    <option value="etudiant">étudiant</option>
+                    <option value="professeur">professeur</option>
+                </select>
+            </div>
+
             <button type="submit">Créer votre compte</button>
 
         </form>
 </fieldset>
-
-
-                    <?php function enregistrerCompte() {
-                     if(trim($_POST['identifiant']) !== '' && trim($_POST['password']) !== '' && trim( $_POST['email']) !== '') {
-                    $servername = 'localhost';
-                    $username = 'root';
-                    $password = 'root';
-                    $port = '3307';
-                    $dbname = 'register';
-                    //On établit la connexion
-                    $conn = mysqli_connect($servername, $username, $password, $dbname, $port);
-
-                    $identifiant = mysqli_real_escape_string($conn, $_POST['identifiant']);
-                    $password = mysqli_real_escape_string($conn, $_POST['password']);
-                    $mail = mysqli_real_escape_string($conn, $_POST['email']);
-
-                    $sql = "INSERT INTO Professeur (Identifiant, Motdepasse, Mail)
-                    VALUES ('$identifiant', '$password', '$mail')";
-                    echo 'Entrée ajoutée dans la table';
-                    mysqli_query($conn, $sql);
-                    Mysqli_close($conn);
-                    }
-                    }
-            
-            ?>
-    
     </main>
 
 </body>
