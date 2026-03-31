@@ -80,6 +80,10 @@ heures.forEach(heure => {
 
         // Simuler des créneaux pris (tu remplaceras par ta vraie data)
         const isPris = Math.random() < 0.3; 
+        
+        td.dataset.pris = isPris;
+        td.classList.add(isPris ? 'creneau-pris' : 'creneau-libre');
+
         td.dataset.pris = isPris;
         td.dataset.heure = heure;
         td.dataset.jour = jours[i];
@@ -160,3 +164,4 @@ function reserver(jour, heure) {
 
     document.querySelector('.popup-overlay').remove();
 }
+
