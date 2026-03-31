@@ -30,7 +30,7 @@ if (isset($_POST['identifiant'], $_POST['password'], $_POST['email'])) {
         // Vérification du mot de passe
         if ($user['Motdepasse'] === $password) {
             echo "Vous êtes connecté !";
-            mysqli_close($conn);
+            
             session_start();
             $_SESSION['pseudo'] = $user['Identifiant'];
             $_SESSION['id'] = $user['Id'];
@@ -43,5 +43,6 @@ if (isset($_POST['identifiant'], $_POST['password'], $_POST['email'])) {
     } else {
         echo "Aucun compte trouvé avec cet email.";
     }
+    mysqli_close($conn);
 }
 ?>
