@@ -115,12 +115,6 @@ next_week.addEventListener('click', () => {
     update_week();
 });
 
-prev_week.addEventListener('click', () => {
-    currentMonday.setDate(currentMonday.getDate() - 7);
-
-    update_week();
-});
-
 update_date();
 
 function ouvrirPopup(td) {
