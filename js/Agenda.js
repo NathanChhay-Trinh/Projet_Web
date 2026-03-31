@@ -124,15 +124,17 @@ function ouvrirPopup(td) {
     if (ancienne) ancienne.remove();
 
     const isPris = td.dataset.pris === "true";
+
     const heure = td.dataset.heure;
     const jour = td.dataset.jour;
 
     const overlay = document.createElement('div');
     overlay.classList.add('popup-overlay');
 
-    overlay.innerHTML = `
+    overlay.innerHTML = 
+    `
         <div class="popup">
-            <button class="popup-close">✕</button>
+            <button class="popup-close"> ✕ </button>
             <h3>Créneau : ${jour} ${heure}</h3>
             <p class="${isPris ? 'pris' : 'libre'}">
                 ${isPris ? 'Ce créneau est déjà pris.' : 'Ce créneau est disponible.'}
@@ -153,3 +155,8 @@ function ouvrirPopup(td) {
     document.body.appendChild(overlay);
 }
 
+function reserver(jour, heure) {
+    alert(`Demandee de reservation envoyee pour ${jour} à ${heure} !`);
+
+    document.querySelector('.popup-overlay').remove();
+}
