@@ -51,3 +51,31 @@
     transform: scale(1.01);
     transition: transform 0.3s ease;
 }
+
+
+.collab-liste {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+    margin: 40px 0;
+}
+
+.carre-collab {
+    background: #f8f9fa;
+    border: 2px solid #034296;
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+}
+
+.carre-collab h3 {
+    color: #034296;
+    margin: 0 0 10px 0;
+}
+
+.carre-collab:hover {
+    background: white;
+    transform: scale(1.05);
+    transition: 0.3s;
+}

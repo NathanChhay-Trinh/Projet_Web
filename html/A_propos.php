@@ -46,6 +46,14 @@
             <h2>L'Efrei Aujourd'hui & ses Alumni</h2>
             <p>Aujourd'hui, l'Efrei c'est un réseau puissant de plus de 16 000 diplômés (Alumni) présents dans les plus grandes entreprises mondiales comme Google, Thales ou Microsoft. Avec un taux d'embauche de 98% avant même la sortie de l'école, l'Efrei reste un tremplin majeur pour une carrière réussie dans le numérique.</p>
         </div>
+		
+	<div class="collab-liste">
+		<h1>Site réalisé par :</h1>
+		<div class="carre-collab"><h3>DOS SANTOS Alexandre</h3><p>B1 Ingénierie et Numérique</p></div>
+		<div class="carre-collab"><h3>KOCOGLU Kévin</h3><p>B1 Ingénierie et Numérique</p></div>
+		<div class="carre-collab"><h3>SAUVAGE Maxime</h3><p>B1 Ingénierie et Numérique</p></div>
+		<div class="carre-collab"><h3>CHHAY - TRINH Nathan</h3><p>B1 Ingénierie et Numérique</p></div>
+	</div>
 
     </main>
     <?php include("Footer.php"); ?>
