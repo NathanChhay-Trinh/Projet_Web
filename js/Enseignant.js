@@ -20,11 +20,16 @@ items.forEach((item, index) => {
     const profItem = document.createElement('div');
     profItem.classList.add('item');
     profItem.innerHTML = `
-        <div class="prof-card" data-prof-id="${index}">
+        <div class="prof-card" data-prof-attribut="${index}">
             <img src="${item.image}" alt="${item.titre}">
             <h2>${item.titre}</h2>
             <p>${item.description}</p>
             
+            <a href="agenda.php?prof=${item.id}" class="btn-agenda">
+             Voir l'agenda
+            </a>
+
+
         </div>
     `;
 

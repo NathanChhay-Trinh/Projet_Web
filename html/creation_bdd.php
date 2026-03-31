@@ -41,12 +41,13 @@ if (mysqli_query($conn, $sql)) {
 } else {
     echo "Erreur création table : " . mysqli_error($conn);
 }
-$sql = "CREATE TABLE IF NOT EXISTS agenda(
-    Id INT NOT NULL,
-    User_Id VARCHAR(50) NOT NULL,
+$sql = "CREATE TABLE IF NOT EXISTS agenda (
+    Id INT NOT NULL AUTO_INCREMENT,
+    IdProf INT NOT NULL,
     Identifiant VARCHAR(50) NOT NULL,
-    Mail VARCHAR(50) NOT NULL
-    Date_Session VARCHAR(50) NOT NULL
+    Mail VARCHAR(50) NOT NULL,
+    Date_Session VARCHAR(50) NOT NULL,
+    PRIMARY KEY (Id)
 )";
 
 if (mysqli_query($conn, $sql)) {

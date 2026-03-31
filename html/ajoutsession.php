@@ -1,24 +1,39 @@
-<?php $servername = 'localhost';
-    $username = 'root';
-    $password_db = 'root';
-    $port = '3307';
-    $dbname = "register";
+<?php
+session_start();
 
-    // Connexion
-    $conn = mysqli_connect($servername, $username, $password_db, $dbname, $port);
+$servername = 'localhost';
+$username = 'root';
+$password_db = 'root';
+$port = '3307';
+$dbname = "register";
 
-    if(!$conn){
-        die('Erreur : ' . mysqli_connect_error());
-    }
+// Connexion
+$conn = mysqli_connect($servername, $username, $password_db, $dbname, $port);
+if (!isset($_SESSION['pseudo']) || !isset($_SESSION['Email'])) {
+    header('Location: login.php');
+    exit();
+}
+if(!$conn){
+    die('Erreur : ' . mysqli_connect_error());
+}
 
-    $pseudo = $_SESSION['pseudo'];
-    $email = $_SESSION['Email'];
+$pseudo = $_SESSION['pseudo'];
+$email = $_SESSION['Email'];
 
-    $sql = "SELECT * FROM users WHERE Mail = '$email' LIMIT 1";
-    $result = mysqli_query($conn, $sql);
+// Récupération des données GET
+$id = $_GET['Id'];
+$date_session = $_GET['Date_Session'];
+$profId = $_GET['prof'];
 
-    $sql2 = "INSERT INTO agenda (Id, Identifiant, Mail, Date_Session)
-                VALUES ('$_GET['Id']', '$pseudo', '$email', '$_GET['Date_Session']')";
+// Requête SQL pour insérer dans l'agenda
+$sql2 = "INSERT INTO agenda (Id, IdProf, Identifiant, Mail, Date_Session)
+VALUES ('$id', '$profId', '$pseudo', '$email', '$date_session')";
 
-    mysqli_close($conn);
-    ?>
+if (mysqli_query($conn, $sql2)) {
+    echo "Session ajoutée à l'agenda !";
+} else {
+    echo "Erreur SQL : " . mysqli_error($conn);
+}
+
+mysqli_close($conn);
+?>

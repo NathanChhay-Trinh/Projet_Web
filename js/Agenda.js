@@ -90,6 +90,7 @@ function update_calendar(real_month, firstDay, lastDay, year) {
             td.dataset.Date_Session = `${real_month} ${firstDay}-${lastDay} ${year}`;
 
             td.addEventListener('click', () => ouvrirPopup(td));
+            
             trBody.appendChild(td);
         }
         tbody.appendChild(trBody);
@@ -165,6 +166,7 @@ function ouvrirPopup(td) {
 }
 
 function reserver(Id, Date_Session) {
+    const profId = Number(new URLSearchParams(location.search).get("prof"));
     window.location.href = 
-        `ajoutsession.php?Id=${encodeURIComponent(Id)}&Date_Session=${encodeURIComponent(Date_Session)}`;
+        `ajoutsession.php?Id=${encodeURIComponent(Id)}&Date_Session=${encodeURIComponent(Date_Session)}&prof=${profId}`;
 }
