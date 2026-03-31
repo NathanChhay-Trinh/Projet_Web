@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/vie_etudiante.css">
     <link rel="stylesheet" href="../css/Interface_de_base.css">
 
-    <script src="../js/vie_etudiante.js"></script>
+    <script src="../js/vie_etudiante.js" defer></script>
 
     <title>Vie VieEtudiante</title>
 
@@ -49,7 +49,7 @@
 
 
     <section class="Les_campus">
-        <p>Nos Campus</p>
+        <h2>Nos Campus</h2>
         <h2 class="h2_titre_campus"> Paris & Bordeaux , deux campus au cœur de la création numérique </h2>
         <div id="text_campus">
 
