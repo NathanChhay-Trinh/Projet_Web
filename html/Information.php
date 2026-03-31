@@ -6,7 +6,9 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/Interface_de_base.css">
 	    <link rel="stylesheet" href="../css/Information.css">
-    <title>Accueil</title>
+
+    <title>Informations – Efrei</title>
+
 
 </head>
 
