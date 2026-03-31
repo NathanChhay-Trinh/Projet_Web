@@ -1,10 +1,10 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     margin: 0;
 }
 
 .page-actualites{
-    padding-top: 80px;
+    padding: 80px 20px;
 }
 
 .page-actualites h2 {
@@ -18,15 +18,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-}
-
-.actus-container {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
-    max-width: 1200px;
-    margin: auto;
 }
 
 .actu-card {
@@ -42,8 +34,9 @@ body {
 }
 
 .actu-card:hover{
-    transform: scale(1.01);
-    transition: transform 0.3s ease;
+    transform: scale(1.03);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .actu-card img {
