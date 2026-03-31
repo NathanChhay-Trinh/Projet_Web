@@ -6,14 +6,14 @@
     <link rel="stylesheet" href="../css/Interface_de_base.css">
     <title>Connexion</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 
 <body>
     <?php include("menu.php"); ?>
     <main class="login-container">
         <fieldset>
-        <legend>Connexion</legend>
+        <h2>Connexion</h2>
 
         <form action="login_test.php" method="POST" class="login-form">
 
