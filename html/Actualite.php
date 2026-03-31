@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/Actualite.css">
     <link rel="stylesheet" href="../css/Acceuil.css">
+    <link rel="stylesheet" href="../css/Interface_de_base.css">
+
     <title>Actualite</title>
 
 </head>
