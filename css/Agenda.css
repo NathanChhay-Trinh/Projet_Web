@@ -143,3 +143,19 @@ td:hover {
     box-shadow: 0 4px 20px rgba(50, 161, 206, 0.4);
     transform: translateY(-2px);
 }
+
+.creneau-libre {
+    background-color: #c8ffd5;
+}
+
+.creneau-libre:hover {
+    background-color: #61ff8e;
+}
+
+.creneau-pris {
+    background-color: #ffcace; 
+}
+
+.creneau-pris:hover {
+    background-color: #ff4558;
+}

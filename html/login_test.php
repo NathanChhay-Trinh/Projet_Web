@@ -15,9 +15,9 @@ if (isset($_POST['identifiant'], $_POST['password'], $_POST['email'])) {
     }
 
     // Récupération des données
-    $identifiant = $_POST['identifiant'];
-    $email = $_POST['email'];
-    $password = $_POST['password'];
+    $identifiant = mysqli_real_escape_string($conn, $_POST['identifiant']);
+    $email = mysqli_real_escape_string($conn, $_POST['email']);
+    $password = mysqli_real_escape_string($conn, $_POST['password']);
 
     // Requête SQL
     $sql = "SELECT * FROM users WHERE Mail = '$email' LIMIT 1";
@@ -30,9 +30,12 @@ if (isset($_POST['identifiant'], $_POST['password'], $_POST['email'])) {
         // Vérification du mot de passe
         if ($user['Motdepasse'] === $password) {
             echo "Vous êtes connecté !";
+            mysqli_close($conn);
             session_start();
             $_SESSION['pseudo'] = $user['Identifiant'];
-            echo 'Bienvenue ' . $_SESSION['pseudo'];
+            $_SESSION['id'] = $user['Id'];
+            $_SESSION['Email'] = $user['Mail'];
+            echo 'Bienvenue ' . $_SESSION['pseudo'] . $_SESSION['id'] . $_SESSION['Email'];
         } else {
             echo "Mot de passe incorrect.";
         }
