@@ -1,4 +1,4 @@
-let currentMonday = null;
+let currentMonday = null; // Stocke la date du lundi de la semaine actuelle
 
 function update_date() {
     const date = new Date();
@@ -6,7 +6,11 @@ function update_date() {
 // Convertir dimanche (0) en 7 pour simplifier
     const adjustedDay = day === 0 ? 7 : day;
     currentMonday = new Date(date);
+        
+    // On recule jusqu'au lundi de la semaine
     currentMonday.setDate(date.getDate() - (adjustedDay - 1));
+        
+    // Met à jour l'affichage de la semaine
     update_week();
 }
 
@@ -70,8 +74,17 @@ heures.forEach(heure => {
     th.setAttribute("scope", "row");
     th.textContent = heure;
     trBody.appendChild(th);
-    for(let i = 0; i < 7; i++) {
+
+    for (let i = 0; i < 7; i++) {
         let td = document.createElement('td');
+
+        // Simuler des créneaux pris (tu remplaceras par ta vraie data)
+        const isPris = Math.random() < 0.3; 
+        td.dataset.pris = isPris;
+        td.dataset.heure = heure;
+        td.dataset.jour = jours[i];
+
+        td.addEventListener('click', () => ouvrirPopup(td));
         trBody.appendChild(td);
     }
     tbody.appendChild(trBody);
@@ -104,3 +117,6 @@ prev_week.addEventListener('click', () => {
 });
 
 update_date();
+
+function ouvrirPopup(td) {
+}//le pop up 

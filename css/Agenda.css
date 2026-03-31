@@ -22,3 +22,22 @@ caption{
         table, td, caption {
     border: 1px solid #333;
     }
+
+
+
+td {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+td.free {
+    background-color: #d4edda;
+}
+
+td.booked {
+    background-color: #f8d7da;
+}
+
+td:hover {
+    filter: brightness(0.9);
+}
