@@ -31,12 +31,12 @@
                 <input type="password" id="password" name="password" required>
             </div>
 
-            <div>
+            <div class="register-group">
                 <label for="status">Statut :</label>
                 <select name="status" id="status">
                     <option value="">--Veuillez choisir une option--</option>
-                    <option value="marie">étudiant</option>
-                    <option value="celibataire">professeur</option>
+                    <option value="etudiant">étudiant</option>
+                    <option value="professeur">professeur</option>
                 </select>
             </div>
 

@@ -1,24 +1,47 @@
-<?php function enregistrerCompte() {
-                     if(trim($_POST['identifiant']) !== '' && trim($_POST['password']) !== '' && trim( $_POST['email']) !== '') {
-                    $servername = 'localhost';
-                    $username = 'root';
-                    $password = 'root';
-                    $port = '3307';
-                    $dbname = 'register';
-                    //On établit la connexion
-                    $conn = mysqli_connect($servername, $username, $password, $dbname, $port);
+<?php include('creation_bdd.php');?>
+<?php
 
-                    $identifiant = mysqli_real_escape_string($conn, $_POST['identifiant']);
-                    $password = mysqli_real_escape_string($conn, $_POST['password']);
-                    $mail = mysqli_real_escape_string($conn, $_POST['email']);
+function enregistrerCompte() {
 
-                    $sql = "INSERT INTO Professeur (Identifiant, Motdepasse, Mail)
-                    VALUES ('$identifiant', '$password', '$mail')";
-                    echo 'Entrée ajoutée dans la table';
-                    mysqli_query($conn, $sql);
-                    Mysqli_close($conn);
-                    }
-                    }
+    if (trim($_POST['identifiant']) !== '' &&
+        trim($_POST['password']) !== '' &&
+        trim($_POST['email']) !== '' &&
+        trim($_POST['status']) !== '') {
 
-                    enregistrerCompte()
-                    ?>
+        $servername = 'localhost';
+        $username = 'root';
+        $password = 'root';
+        $port = '3307';
+        $dbname = 'register';
+
+        // Connexion
+        $conn = mysqli_connect($servername, $username, $password, $dbname, $port);
+
+        if (!$conn) {
+            die('Erreur de connexion : ' . mysqli_connect_error());
+        }
+
+        // Sécurisation
+        $identifiant = mysqli_real_escape_string($conn, $_POST['identifiant']);
+        $password = mysqli_real_escape_string($conn, $_POST['password']);
+        $mail = mysqli_real_escape_string($conn, $_POST['email']);
+        $status = mysqli_real_escape_string($conn, $_POST['status']);
+
+        // Requête SQL
+        $sql = "INSERT INTO users (Identifiant, Motdepasse, Mail, Sta_tus)
+                VALUES ('$identifiant', '$password', '$mail', '$status')";
+
+        // Exécution + message
+        if (mysqli_query($conn, $sql)) {
+            echo "Entrée ajoutée dans la table";
+        } else {
+            echo "Erreur SQL : " . mysqli_error($conn);
+        }
+
+        mysqli_close($conn);
+    }
+}
+
+enregistrerCompte();
+
+?>
