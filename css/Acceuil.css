@@ -3,6 +3,16 @@ body{
     margin: 0;
     }
 
+h2{
+    font-weight: 700;
+    font-size: 41px;
+    color: #163767; 
+}
+
+section{
+    padding-bottom: 0;
+    padding-top: 80px;
+}
 
 /* ================ Image de fond ================== */
 
@@ -162,6 +172,12 @@ justify-content: space-between;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    transition: 0.3s;
+}
+
+.actu:hover{
+    transform: scale(1.01);
+    transition: transform 0.3s ease;
 }
 
 .date-actu {
