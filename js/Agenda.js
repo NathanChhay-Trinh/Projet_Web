@@ -108,6 +108,11 @@ function update_calendar(real_month, firstDay, lastDay, year) {
 
 const next_week = document.querySelector('#next-week');
 const prev_week = document.querySelector('#prev-week');
+prev_week.addEventListener('click', () => {
+    currentMonday.setDate(currentMonday.getDate() - 7);
+
+    update_week();
+});
 
 next_week.addEventListener('click', () => {
     currentMonday.setDate(currentMonday.getDate() + 7);

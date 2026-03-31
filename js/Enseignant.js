@@ -16,18 +16,15 @@ throw new Error('Network response was not ok');
 return response.json();
 })
 .then(items => {
-items.forEach((item , index) => {
+items.forEach((item, index) => {
     const profItem = document.createElement('div');
     profItem.classList.add('item');
     profItem.innerHTML = `
-        <div class="prof-card">
+        <div class="prof-card" data-prof-id="${index}">
             <img src="${item.image}" alt="${item.titre}">
             <h2>${item.titre}</h2>
             <p>${item.description}</p>
             
-            <a href="agenda.php?=${index}" class="agenda-link">
-                Voir l'agenda
-            </a>
         </div>
     `;
 

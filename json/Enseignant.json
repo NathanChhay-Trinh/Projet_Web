@@ -2,35 +2,45 @@
     {
         "titre": "Soumaila Abdoulaye DIARRA",
         "image": "../img/Soumaila.jpg",
-        "description": "DevSecOps Expert🛡️@BPCE | Software engineering, Security, Flutter enthusiast"
+        "description": "DevSecOps Expert🛡️@BPCE | Software engineering, Security, Flutter enthusiast",
+        "id": 1
         },
     {
         "titre": "Lena Trebaul",
         "image": "../img/Lena.jpg",
-        "description": "Ingénieure en informatique, docteure en neurosciences computationnelles et enseignante en informatique."
+        "description": "Ingénieure en informatique, docteure en neurosciences computationnelles et enseignante en informatique.",
+        "id": 2
     },
     {
         "titre": "Mourad Kmimech",
         "image": "../img/Mourad.jpg",
-        "description": "Enseignant chez EFREI- Grande écolé du numérique"
+        "description": "Enseignant chez EFREI- Grande écolé du numérique",
+        "id": 3
     },
     {
         "titre": "Léa Delacroix",
         "image": "../img/Léa.jpg",
-        "description": "Responsable pédagogique"
+        "description": "Responsable pédagogique",
+        "id": 4
     },
     {
         "titre": "A Yvan Guifo Fodjo",
         "image": "../img/Yvan.jpg",
-        "description": "PhD in Computer Science (Software Engineering, Modelling and Simulation of Complex Systems, Sustainable Digital Technology)"    },
+        "description": "PhD in Computer Science (Software Engineering, Modelling and Simulation of Complex Systems, Sustainable Digital Technology)",
+        "id": 5
+    },
     {
         "titre": "Fatima Moqran",
         "image": "../img/Fatima.jpg",
-        "description": "Formatrice Data & Intelligence Artificielle | Je forme la nouvelle génération aux métiers de la Data  | Intervenante dans +5 établissements d’enseignement supérieur  | Certificat de formateur pour adultes"    },
+        "description": "Formatrice Data & Intelligence Artificielle | Je forme la nouvelle génération aux métiers de la Data  | Intervenante dans +5 établissements d’enseignement supérieur  | Certificat de formateur pour adultes",
+        "id": 6
+    },
     {
         "titre": "Frédéric Meunier",
         "image": "../img/Frédéric.jpg",
-        "description": "Directeur général @EFREI | Enseignement supérieur et Recherche"    }
+        "description": "Directeur général @EFREI | Enseignement supérieur et Recherche",
+        "id": 7
+    }
 ]
 
 
