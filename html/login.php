@@ -3,21 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/Interface_de_base.css">
     <title>Connexion</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
+    <?php include("menu.php"); ?>
     <main class="login-container">
         <fieldset>
         <legend>Connexion</legend>
 
-        <form action="login.php" method="POST" class="login-form">
+        <form action="login_test.php" method="POST" class="login-form">
 
             <div class="input-group">
-                <label for="email">Adresse email</label>
+                <label for="identifiant">Identifiant</label>
+                <input type="text" id="identifiant" name="identifiant" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
             </div>
 
@@ -28,14 +34,11 @@
 
             <button type="submit">Se connecter</button>
 
-            <p class="register-link">
-                Pas encore de compte ? <a href="register.php">Créer un compte</a>
-            </p>
-
         </form>
 </fieldset>
     
     </main>
+    <?php include("./Footer.php"); ?>
 
 </body>
 </html>

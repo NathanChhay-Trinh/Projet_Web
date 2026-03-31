@@ -17,11 +17,12 @@
                     }
                     
                     echo 'Connexion réussie';
-                    $sql = "CREATE TABLE IF NOT EXISTS Professeur(
+                    $sql = "CREATE TABLE IF NOT EXISTS all_accounts(
                     Id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
                     Identifiant VARCHAR(30) NOT NULL,
                     Motdepasse VARCHAR(30) NOT NULL,
                     Mail VARCHAR(50) NOT NULL,
+                    Sta_tus VARCHAR(50) NOT NULL,
                     DateInscription TIMESTAMP,
                     UNIQUE(Mail))"; 
                     echo 'Table bien créée !';
