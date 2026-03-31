@@ -25,12 +25,12 @@
     
     <div id="formation_container">
         <div class="formation">
-            <a href="./Formation/Grande_ecole.php">
+            <a href="Grande_ecole.php">
             <img src="../img/Grande_ecole.jpg" class="Grande_ecole" alt="Logo Grande Ecole">
             Prog. Grande École</a>
         </div>
         <div class="formation">
-            <a href="./Formation/Technologie&Numerique.php">
+            <a href="Technologie&Numerique.php">
             <img src="../img/Technologie&Numerique.jpg" class="Technologie&Numerique" alt="Logo Technologie & Numerique">
             Prog. Technologie & Numérique</a>
         </div>
