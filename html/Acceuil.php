@@ -79,7 +79,7 @@
         98%
     </p>
     <p class="texte">
-        taux d'emplois
+        taux d'emplois après obtention du diplôme
         </p>
     </div>
     </div>
@@ -124,7 +124,7 @@
 
 <section class="temoignage">
 
-    <h2>Temoignage de nos clients</h2>
+    <h2>Témoignage de nos clients</h2>
 
     <div class="carousel">
 
