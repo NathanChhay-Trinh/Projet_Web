@@ -37,6 +37,7 @@
             <li>
                 1re année de Bachelor Informatique, diplôme de grade licence
             </li>
+        </ul>
     </div>
 </section>
 

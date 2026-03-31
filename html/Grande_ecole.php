@@ -40,6 +40,7 @@
             <li>
                 1re année de Prépa PLUS
             </li>
+        </ul>
     </div>
 </section>
 
