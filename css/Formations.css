@@ -3,7 +3,11 @@ div {
     color:#243564; 
     
 }
-div:hover {
+h1:hover {
+    transform: scale(1.01);
+    transition: transform 0.3s ease;
+}
+.desc_enseignant:hover {
     transform: scale(1.01);
     transition: transform 0.3s ease;
 }
