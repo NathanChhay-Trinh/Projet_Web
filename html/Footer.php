@@ -16,6 +16,7 @@
                 <li><a href="./Acceuil.php">Accueil</a></li>
                 <li><a href="./formations.php">Formations</a></li>
                 <li><a href="./vieEtudiante.php">Vie étudiante</a></li>
+                <li><a href="./A_propos.php" class="menu-btn">À propos</a></li>
             </ul>
         </div>
 
