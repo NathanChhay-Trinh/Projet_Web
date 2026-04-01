@@ -81,8 +81,15 @@ function update_calendar(real_month, firstDay, lastDay, year) {
             td.dataset.Id = IdCounter;
             IdCounter++;
 
-            td.dataset.pris = "false";
-            td.classList.add('creneau-libre');
+            //montrer si ca fonctionne ou pas             
+            const isPris = Math.random() < 0.3; 
+        
+            td.dataset.pris = isPris;
+            td.classList.add(isPris ? 'creneau-pris' : 'creneau-libre');
+
+
+            //td.dataset.pris = "false";
+            //td.classList.add('creneau-libre');
 
             td.dataset.heure = heure;
             td.dataset.jour = jours[i];
