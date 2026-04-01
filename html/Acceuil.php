@@ -139,7 +139,7 @@
 
     <div class="droite">
             <p class="texte-temoignage">
-                "Grâce à l'Efrei, j'ai progressé rapidement ."
+                "Grâce à l'Efrei, j'ai progrésser bien plus vite que je ne l'imaginer. La théorie et la pratique sont bien équilibrées, et dès la première année j'ai acquis des compétences que j'utilise vraiment"
             </p>
     </div>
 </div>
@@ -154,7 +154,7 @@
 
     <div class="droite">
         <p class="texte-temoignage">
-            "Les projets sont très concrets et permettent vraiment de progresser rapidement ."
+            "Ce que j'aime c'est qu'on ne fait pas que de la théorie. On est vite mis en situation réelle, et ça change tout. J'ai gagné en confiance très rapidement ."
         </p>
     </div>
 </div>
@@ -163,12 +163,12 @@
         <div class="gauche">
         <img src="https://randomuser.me/api/portraits/men/68.jpg" class="photo">
         <p class="nom">Kévin Kocoglu</p>
-        <p class="niveau">2ème année en Bachelor Ingénierie et Cybersécurité</p>
+        <p class="niveau">1ère année en Bachelor Développement web et IA</p>
     </div>
 
     <div class="droite">
         <p class="texte-temoignage">
-            "Une école tournée vers l'avenir avec des formations en phase avec les besoins des entreprises."
+            "L'Efrei m'a donné envie de coder. Les sujets sont intéressants, les profs connaissent leur truc, et on est tout de suite dans le concret. Je recommande sans hésiter"
         </p>
     </div>
 </div>
@@ -177,12 +177,12 @@
         <div class="gauche">
         <img src="https://randomuser.me/api/portraits/men/75.jpg" class="photo">
         <p class="nom">Alexandre Dos Santos</p>
-        <p class="niveau">1ère année en Bachelor Ethical Hacking</p>
+        <p class="niveau">1ère année en Bachelor Cybersécurité et Ethical Hacking</p>
     </div>
 
     <div class="droite">
         <p class="texte-temoignage">
-            "L'ambiance est excellente et l'accompagnement des étudiants est vraiment un plus."
+            "En 1ère année j'ai découvert la cyber et ça a tout changé pour moi. Je ne savais pas que c'était un domaine aussi passionnant, et l'Efrei m'a vraiment donné envie d'aller plus loin."
         </p>
     </div>
     </div>
@@ -210,7 +210,7 @@ function updateCarousel() {
 next.addEventListener('click', () => {
     index++;
     if (index >= cards.length) {
-        index = 0; // boucle
+        index = 0;
     }
     updateCarousel();
 });
@@ -218,7 +218,7 @@ next.addEventListener('click', () => {
 prev.addEventListener('click', () => {
     index--;
     if (index < 0) {
-        index = cards.length - 1; // boucle inverse
+        index = cards.length - 1;
     }
     updateCarousel();
 });
