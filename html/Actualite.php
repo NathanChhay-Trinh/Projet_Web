@@ -79,24 +79,25 @@
 
         <div class="actu-card">
             <img src="../img/groupeetudiantsefrei-1024x681.jpg" alt="">
-            <p class="date-actu">19 janvier 2026 · Parcoursup</p>
+            <p class="date-actu">19 janvier 2026</p>
             <h3 class="titre-actu">Parcoursup : nos conseils pour réussir son dossier</h3>
         </div>
 
         <div class="actu-card">
             <img src="../img/Classement-Efrei-662-x-400-px.png" alt="">
-            <p class="date-actu">13 janvier 2026 · Classements</p>
+            <p class="date-actu">13 janvier 2026</p>
             <h3 class="titre-actu">Classements écoles d'ingénieurs 2026 : l'Efrei dans le top 10 national</h3>
         </div>
 
         <div class="actu-card">
             <img src="../img/DSC06282-1024x683.jpg" alt="">
-            <p class="date-actu">8 janvier 2026 · Vie de l'école</p>
+            <p class="date-actu">8 janvier 2026</p>
             <h3 class="titre-actu">L'Efrei inaugure son nouveau site au coeur de Villejuif</h3>
         </div>
 
     
     </section>
+
     <?php include("Footer.php"); ?>
 
 

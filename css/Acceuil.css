@@ -176,8 +176,9 @@ justify-content: space-between;
 }
 
 .actu:hover{
-    transform: scale(1.01);
-    transition: transform 0.3s ease;
+    transform: scale(1.03);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .date-actu {
