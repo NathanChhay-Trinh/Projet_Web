@@ -124,7 +124,7 @@
 
 <section class="temoignage">
 
-    <h2>Témoignage de nos clients</h2>
+    <h2>Témoignages de nos étudiants</h2>
 
     <div class="carousel">
 
